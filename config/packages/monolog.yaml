@@ -14,10 +14,10 @@ when@dev:
             # you may have to allow bigger header sizes in your Web server configuration
             #firephp:
             #    type: firephp
-            #    level: info
+            #    level: info.html.twig
             #chromephp:
             #    type: chromephp
-            #    level: info
+            #    level: info.html.twig
             console:
                 type: console
                 process_psr_3_messages: false

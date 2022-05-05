@@ -23,6 +23,9 @@ class PfeController extends AbstractController
             $pfe = $form->getData();
             $entityManager->persist($pfe);
             $entityManager->flush();
+            return $this->render('info.html.twig', [
+                'pfe' => $pfe
+            ]);
         }
         return $this->render('pfe/index.html.twig', [
             'form' => $form->createView()
